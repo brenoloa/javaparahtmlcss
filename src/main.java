@@ -48,7 +48,7 @@ public class main {
             for (Object[] linha : dados) {
                 writer.write("<tr>");
                 for (int j = 0; j < linha.length; j++) {
-                    if (j == 4) { // Status
+                    if (j == 4) { 
                         String status = (String) linha[j];
                         writer.write("<td class=\"" + (status.equals("APROVADO") ? "aprovado" : "reprovado") + "\">" + status + "</td>");
                     } else {
