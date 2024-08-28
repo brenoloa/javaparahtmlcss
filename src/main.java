@@ -37,38 +37,7 @@ public class main {
             writer.write("<!DOCTYPE html>\n<html lang=\"pt-BR\">\n<head>\n");
             writer.write("<meta charset=\"UTF-8\">\n<title>Tabela de Alunos</title>\n");
             writer.write("<link rel=\"stylesheet\" href=\"style.css\">\n");
-            writer.write("<style>\n");
-            writer.write("table {\n");
-            writer.write("  width: 80%;\n");
-            writer.write("  margin: 20px auto;\n");
-            writer.write("  border-collapse: collapse;\n");
-            writer.write("  background-color: #ffffff;\n"); // Fundo branco para a tabela
-            writer.write("}\n");
-            writer.write("th, td {\n");
-            writer.write("  border: 1px solid #ddd;\n");
-            writer.write("  padding: 8px;\n");
-            writer.write("  text-align: center;\n");
-            writer.write("}\n");
-            writer.write("th {\n");
-            writer.write("  background-color: #f4f4f4;\n");
-            writer.write("}\n");
-            writer.write("tr:nth-child(even) {\n");
-            writer.write("  background-color: #ffffff;\n"); // Linha de tabela branca
-            writer.write("}\n");
-            writer.write("tr:nth-child(odd) {\n");
-            writer.write("  background-color: #f9f9f9;\n"); // Linha de tabela alternada
-            writer.write("}\n");
-            writer.write(".aprovado {\n");
-            writer.write("  color: green;\n");
-            writer.write("  font-weight: bold;\n");
-            writer.write("}\n");
-            writer.write(".reprovado {\n");
-            writer.write("  color: red;\n");
-            writer.write("  font-weight: bold;\n");
-            writer.write("}\n");
-            writer.write("</style>\n");
             writer.write("</head>\n<body>\n");
-
             writer.write("<h1>Dados dos Alunos</h1>\n");
             writer.write("<table>\n<tr>");
             for (String cab : cabecalho) {
@@ -95,7 +64,8 @@ public class main {
 
             System.out.println("#### ARQUIVO HTML GERADO ####");
 
-        } catch (IOException e) {
+        } 
+        catch (IOException e) {
             e.printStackTrace();
         }
     }
